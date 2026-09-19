@@ -66,3 +66,44 @@ Local Language AI Assistant
    ↓
 Agricultural Input Suppliers
 ```
+
+---
+
+## 🚀 How to Run the Project
+
+The project is split into a **Python FastAPI backend** and a **React (Vite) frontend**.
+
+### ⚡ Quick Start (Both Servers)
+
+#### Terminal 1 — Backend (FastAPI + Python)
+> **Note:** The backend is a Python service, so use `uvicorn` (not `npm`).
+
+From the project root:
+```powershell
+cd backend
+.\.venv\Scripts\uvicorn app.main:app --reload --port 8000
+```
+*Or from the root using npm:*
+```powershell
+npm run dev:backend
+```
+
+- **Backend API & Swagger Docs:** [http://localhost:8000/docs](http://localhost:8000/docs)
+- The backend automatically uses SQLite (`backend/agribridgezero.db`) if local PostgreSQL/PostGIS is not running.
+
+---
+
+#### Terminal 2 — Frontend (React + Vite + TypeScript)
+From the project root:
+```powershell
+npm run dev
+```
+*Or from the `frontend/` folder:*
+```powershell
+cd frontend
+npm run dev
+```
+
+- **Web App (Desktop):** [http://localhost:5173/](http://localhost:5173/)
+- **Mobile Access:** Open `http://<your-local-ip>:5173/` on your phone connected to the same Wi-Fi.
+- Vite automatically proxies `/api/v1` calls to the FastAPI backend running on port 8000.

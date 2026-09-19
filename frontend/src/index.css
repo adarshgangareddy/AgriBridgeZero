@@ -1,0 +1,85 @@
+:root {
+  /* AgriBridgeZero Color Tokens strictly conforming to 70/15/10/5 Rule */
+  --bg-ivory: #F7F5EF;
+  --bg-ivory-light: #FAF8F3;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FCFBF8;
+  
+  --text-graphite: #242522;
+  --text-secondary: #6F6D66;
+  --text-muted: #8C887E;
+  
+  --accent-terracotta: #B76543;
+  --accent-terracotta-hover: #9C5234;
+  --accent-terracotta-light: rgba(183, 101, 67, 0.08);
+  
+  --accent-amber: #C69A45;
+  --accent-amber-light: rgba(198, 154, 69, 0.1);
+  
+  --accent-green: #647B4A;
+  --accent-green-light: rgba(100, 123, 74, 0.12);
+  --accent-green-dark: #2A401D;
+  
+  --footer-dark: #1A241A;
+  --footer-darker: #131B13;
+  
+  --border-subtle: #E5E1D8;
+  --border-focus: #B76543;
+  
+  --shadow-subtle: 0 2px 8px rgba(36, 37, 34, 0.04);
+  --shadow-card: 0 4px 16px rgba(36, 37, 34, 0.06);
+  --shadow-hover: 0 8px 24px rgba(36, 37, 34, 0.09);
+  --shadow-modal: 0 20px 48px rgba(36, 37, 34, 0.2);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  --font-sans: "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-ivory);
+  color: var(--text-graphite);
+  line-height: 1.5;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
